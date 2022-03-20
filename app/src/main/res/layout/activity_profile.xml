@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bodega_pfp_2"
     tools:context=".ProfileActivity">
 
     <TextView
@@ -11,9 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="45dp"
+        android:textSize="20sp"
+        android:layout_marginTop="125dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="300dp"
+        android:background="@color/white"
         android:text="PROFILE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
