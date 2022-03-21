@@ -68,8 +68,8 @@ class MainActivity : AppCompatActivity() {
         // sets up button for adding new items
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
-            val intent = Intent(this@MainActivity, NewItemActivity::class.java)
-            startActivityForResult(intent, newItemActivityRequestCode)
+            val intent = Intent(this, CartActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -141,4 +141,6 @@ class MainActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
+
+
 }
