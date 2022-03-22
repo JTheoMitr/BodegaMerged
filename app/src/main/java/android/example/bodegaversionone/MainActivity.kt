@@ -68,8 +68,8 @@ class MainActivity : AppCompatActivity() {
         // sets up button for adding new items
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
-            val intent = Intent(this@MainActivity, NewItemActivity::class.java)
-            startActivityForResult(intent, newItemActivityRequestCode)
+            val intent = Intent(this, CartActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -134,7 +134,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java )
             startActivity(intent)
             finish()
+        } else if (item.itemId == R.id.UserProfile) {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
+
         return super.onOptionsItemSelected(item)
     }
+
+
 }
