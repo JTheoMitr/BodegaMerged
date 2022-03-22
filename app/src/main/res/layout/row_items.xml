@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+<!--        this is a comment-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"

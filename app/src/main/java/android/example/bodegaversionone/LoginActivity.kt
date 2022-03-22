@@ -14,21 +14,21 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        val current_user = auth.currentUser
-        if (current_user != null) {
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
     }
 
-    fun SignIn(view : View) {
+    fun signIn(view : View) {
         val email = emailText.text.toString()
         val password = passwordText.text.toString()
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val currentUser = auth.currentUser!!.email.toString()
-                Toast.makeText(this, "Welcome, ${currentUser}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Welcome, $currentUser", Toast.LENGTH_LONG).show()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun Register(view : View) {
+    fun register(view : View) {
         val email = emailText.text.toString()
         val password = passwordText.text.toString()
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
