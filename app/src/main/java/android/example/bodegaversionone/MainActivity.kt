@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     private val newItemActivityRequestCode = 1
 
+    // DEREK's CODE
     private val itemViewModel: ItemViewModel by viewModels {
         ItemViewModelFactory((application as ItemApplication).repository)
     }
@@ -92,7 +93,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+    // John's Code for RETROFIT
     private fun getMyData() {
         val retrofitBuilder = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
@@ -122,6 +123,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+    //JOHNS CODE FOR MENU OPTIONS
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val menuInflater = menuInflater
         menuInflater.inflate(R.menu.option, menu)
