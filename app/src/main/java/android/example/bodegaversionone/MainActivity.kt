@@ -2,6 +2,7 @@ package android.example.bodegaversionone
 
 import android.app.Activity
 import android.content.Intent
+import android.example.bodegaversionone.ui.LoginActivity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,7 +24,6 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.lang.StringBuilder
 
 const val BASE_URL = "https://fakestoreapi.com/"
 

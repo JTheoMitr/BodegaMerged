@@ -1,6 +1,8 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.ui
 
 import android.content.Intent
+import android.example.bodegaversionone.MainActivity
+import android.example.bodegaversionone.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
