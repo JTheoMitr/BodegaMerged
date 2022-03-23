@@ -5,4 +5,14 @@
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="add_word">Add word</string>
+    <string name="all_products">All Products</string>
+    <string name="add_item">Add Item</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="bodega">BODEGA</string>
+    <string name="product_image">Product Image</string>
+    <string name="user_id">User Id</string>
+    <string name="title">Title</string>
 </resources>

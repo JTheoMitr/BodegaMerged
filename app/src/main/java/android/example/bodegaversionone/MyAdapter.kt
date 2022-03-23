@@ -24,7 +24,7 @@ class MyAdapter(val context: Context, val userList: List<MyDataItem>): RecyclerV
         init {
             title = itemView.title
             description = itemView.description
-            image = itemView.image_movie
+            image = itemView.imageProduct
         }
 
 
