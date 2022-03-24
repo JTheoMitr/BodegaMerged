@@ -1,5 +1,6 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.utils
 
+import android.example.bodegaversionone.models.Rating
 import androidx.room.TypeConverter
 
 object Converters {

@@ -1,6 +1,7 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
 
-import android.example.bodegaversionone.ItemListAdapter.*
+import android.example.bodegaversionone.R
+import android.example.bodegaversionone.data.ItemListAdapter.*
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

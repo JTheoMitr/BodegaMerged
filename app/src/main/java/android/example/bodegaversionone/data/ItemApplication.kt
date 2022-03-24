@@ -1,4 +1,4 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
 
 
 import android.app.Application
@@ -10,5 +10,5 @@ class ItemApplication : Application() {
     private val applicationScope = CoroutineScope(SupervisorJob())
 
     val database by lazy { ItemRoomDB.getDatabase(this, applicationScope) }
-    val repository by lazy { ItemRepository(database.itemDAO())}
+    val repository by lazy { ItemRepository(database.itemDAO()) }
 }

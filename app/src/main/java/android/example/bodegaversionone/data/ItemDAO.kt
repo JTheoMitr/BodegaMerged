@@ -1,6 +1,7 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
 
 
+import android.example.bodegaversionone.models.Product
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy

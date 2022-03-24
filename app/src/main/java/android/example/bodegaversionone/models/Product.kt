@@ -1,4 +1,4 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

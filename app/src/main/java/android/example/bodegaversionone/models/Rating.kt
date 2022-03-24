@@ -1,4 +1,4 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.models
 
 data class Rating(
     var count: Int,

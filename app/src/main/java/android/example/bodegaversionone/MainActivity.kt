@@ -2,7 +2,13 @@ package android.example.bodegaversionone
 
 import android.app.Activity
 import android.content.Intent
+import android.example.bodegaversionone.data.*
+import android.example.bodegaversionone.models.Product
+import android.example.bodegaversionone.models.Rating
+import android.example.bodegaversionone.ui.CartActivity
 import android.example.bodegaversionone.ui.LoginActivity
+import android.example.bodegaversionone.ui.NewItemActivity
+import android.example.bodegaversionone.ui.ProfileActivity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
