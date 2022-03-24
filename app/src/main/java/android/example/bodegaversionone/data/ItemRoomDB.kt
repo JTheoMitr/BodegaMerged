@@ -1,6 +1,9 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
 
 import android.content.Context
+import android.example.bodegaversionone.utils.Converters
+import android.example.bodegaversionone.models.Product
+import android.example.bodegaversionone.models.Rating
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase

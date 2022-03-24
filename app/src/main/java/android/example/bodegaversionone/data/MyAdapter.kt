@@ -1,6 +1,7 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
 
 import android.content.Context
+import android.example.bodegaversionone.R
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

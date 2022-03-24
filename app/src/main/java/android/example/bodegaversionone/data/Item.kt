@@ -1,5 +1,6 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
 
+import android.example.bodegaversionone.models.Product
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey

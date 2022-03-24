@@ -1,5 +1,6 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
 
+import android.example.bodegaversionone.models.Product
 import androidx.annotation.WorkerThread
 import kotlinx.coroutines.flow.Flow
 

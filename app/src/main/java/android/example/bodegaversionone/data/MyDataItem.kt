@@ -1,4 +1,6 @@
-package android.example.bodegaversionone
+package android.example.bodegaversionone.data
+
+import android.example.bodegaversionone.models.Rating
 
 data class MyDataItem(
     val category: String,
