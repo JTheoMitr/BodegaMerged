@@ -38,8 +38,8 @@ class MyAdapter(val context: Context, val userList: List<MyDataItem>): RecyclerV
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        holder.title.text = userList[position].title.toString()
-        holder.description.text = userList[position].description.toString()
+        holder.title.text = userList[position].title.take(20)
+        holder.description.text = userList[position].description
 
         val url = userList[position].image
 
