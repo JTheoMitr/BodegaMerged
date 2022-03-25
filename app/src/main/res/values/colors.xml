@@ -14,4 +14,6 @@
     <color name="slate_grey">#474646</color>
     <color name="sky_blue">#00BCD4</color>
     <color name="light_grey">#D1CFCF</color>
+    <color name="login_blue">#a6f4fa</color>
+    <color name="login_grass_one">#A6BC26</color>
 </resources>
