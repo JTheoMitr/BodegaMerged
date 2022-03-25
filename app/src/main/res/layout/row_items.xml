@@ -39,7 +39,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/login_blue"
+                android:background="@drawable/custom_text_border"
                 android:gravity="center_vertical"
                 android:layout_marginStart="2dp">
 
