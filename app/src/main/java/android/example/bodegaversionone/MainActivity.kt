@@ -14,6 +14,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.viewModels
 
@@ -32,6 +34,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 const val BASE_URL = "https://fakestoreapi.com/"
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -78,6 +82,19 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CartActivity::class.java)
             startActivity(intent)
         }
+
+        // John's code for Crashlytics
+        // Creates a button that mimics a crash when pressed
+
+//        val crashButton = Button(this)
+//        crashButton.text = "Test Crash"
+//        crashButton.setOnClickListener {
+//            throw RuntimeException("Test Crash") // Force a crash
+//        }
+//
+//        addContentView(crashButton, ViewGroup.LayoutParams(
+//            ViewGroup.LayoutParams.MATCH_PARENT,
+//            ViewGroup.LayoutParams.WRAP_CONTENT))
     }
 
 
@@ -149,6 +166,9 @@ class MainActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
+
+
+
 
 
 }
