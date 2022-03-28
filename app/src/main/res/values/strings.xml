@@ -17,7 +17,7 @@
     <string name="title">Title</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
-    <string name="confirm_message">Saved successfully. Please review all submitted information.</string>
+    <string name="confirm_message">Saved successfully. Please review all info.</string>
     <string name="submit">Submit</string>
     <string name="first_name_label">First Name:</string>
     <string name="placeholder">PLACEHOLDER</string>
