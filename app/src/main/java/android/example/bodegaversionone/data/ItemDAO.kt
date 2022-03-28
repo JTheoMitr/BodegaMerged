@@ -33,7 +33,7 @@ interface ItemDAO {
     suspend fun searchTitle(query : String) : List<Product>
 
     // search function that returns a list of products that contain the query in the description
-    @Query("SELECT * FROM item_table WHERE :query LIKE description")
+    @Query("SELECT * FROM item_table WHERE :query LIKE item_table.description")
     suspend fun searchDescriptions(query : String) : List<Product>
 
     // returns a list of products where category matches the query
@@ -41,11 +41,11 @@ interface ItemDAO {
     suspend fun searchCategories(query : String) : List<Product>
 
     // returns the item with the selected PID
-    @Query("SELECT * FROM item_table WHERE id MATCH :query")
+    @Query("SELECT * FROM item_table WHERE item_table.pid MATCH :query")
     suspend fun searchId(query: String) : List<Product>
 
-
-
-
+    // return all prodcts by price
+    @Query("SELECT * FROM item_table ORDER BY item_table.price ASC")
+    suspend fun getAllByPrice() : List<Product>
 
 }
