@@ -126,10 +126,10 @@ class MainActivity : AppCompatActivity() {
 
         val retrofitData = retrofitBuilder.getData()
 
-        retrofitData.enqueue(object : Callback<List<MyDataItem>?> {
+        retrofitData.enqueue(object : Callback<List<Product>?> {
             override fun onResponse(
-                call: Call<List<MyDataItem>?>,
-                response: Response<List<MyDataItem>?>
+                call: Call<List<Product>?>,
+                response: Response<List<Product>?>
             ) {
                 val responseBody = response.body()!!
 
@@ -140,7 +140,7 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            override fun onFailure(call: Call<List<MyDataItem>?>, t: Throwable) {
+            override fun onFailure(call: Call<List<Product>?>, t: Throwable) {
                 Log.d("MainActivity", "onFailure: " + t.message)
             }
         })

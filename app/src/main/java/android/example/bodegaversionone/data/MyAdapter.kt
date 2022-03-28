@@ -2,6 +2,7 @@ package android.example.bodegaversionone.data
 
 import android.content.Context
 import android.example.bodegaversionone.R
+import android.example.bodegaversionone.models.Product
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +14,7 @@ import kotlinx.android.synthetic.main.row_items.view.*
 
 
 
-class MyAdapter(val context: Context, val userList: List<MyDataItem>): RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+class MyAdapter(val context: Context, val userList: List<Product>): RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
