@@ -15,4 +15,6 @@
     <string name="product_image">Product Image</string>
     <string name="user_id">User Id</string>
     <string name="title">Title</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
 </resources>
