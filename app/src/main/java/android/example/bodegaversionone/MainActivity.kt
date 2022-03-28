@@ -40,7 +40,7 @@ const val BASE_URL = "https://fakestoreapi.com/"
 class MainActivity : AppCompatActivity() {
 
     private lateinit var aut : FirebaseAuth
-    lateinit var myAdapter: MyAdapter
+    lateinit var myAdapter: ProductAdapter
     lateinit var linearLayoutManager: LinearLayoutManager
 
     private val newItemActivityRequestCode = 1
@@ -59,7 +59,8 @@ class MainActivity : AppCompatActivity() {
 
         // Just added to get recycler view working for Room with a View
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview_products)
-        val adapter = ItemListAdapter()
+        val response : List<Product> = emptyList()
+        val adapter = ProductAdapter(baseContext, response)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -133,7 +134,7 @@ class MainActivity : AppCompatActivity() {
             ) {
                 val responseBody = response.body()!!
 
-                myAdapter = MyAdapter(baseContext, responseBody)
+                myAdapter = ProductAdapter(baseContext, responseBody)
                 myAdapter.notifyDataSetChanged()
                 recyclerview_products.adapter = myAdapter
 
