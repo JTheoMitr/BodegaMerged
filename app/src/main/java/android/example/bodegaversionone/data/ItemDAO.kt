@@ -26,6 +26,26 @@ interface ItemDAO {
 
     // a play/test function to try out grabbing items by category
     @Query("SELECT * FROM item_table ORDER BY category ASC")
-     fun getAllByCategory() : Flow<List<Product>>
+    fun getAllByCategory() : Flow<List<Product>>
+
+    // search function that returns a list of products that have the same title as the search
+    @Query("SELECT * FROM item_table WHERE title MATCH :query")
+    suspend fun searchTitle(query : String) : List<Product>
+
+    // search function that returns a list of products that contain the query in the description
+    @Query("SELECT * FROM item_table WHERE :query LIKE description")
+    suspend fun searchDescriptions(query : String) : List<Product>
+
+    // returns a list of products where category matches the query
+    @Query("SELECT * FROM item_table WHERE category MATCH :query")
+    suspend fun searchCategories(query : String) : List<Product>
+
+    // returns the item with the selected PID
+    @Query("SELECT * FROM item_table WHERE id MATCH :query")
+    suspend fun searchId(query: String) : List<Product>
+
+
+
+
 
 }
