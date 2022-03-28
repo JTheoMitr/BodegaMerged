@@ -1,3 +1,5 @@
 package android.example.bodegaversionone.data
 
-class MyData : ArrayList<MyDataItem>()
+import android.example.bodegaversionone.models.Product
+
+class MyData : ArrayList<Product>()

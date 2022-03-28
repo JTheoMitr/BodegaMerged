@@ -12,7 +12,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-// annotation to declare a Room Database with a table of our MyDataItem class
+// annotation to declare a Room Database with a table of our Product class
 @Database(entities = arrayOf(Product::class), version = 1, exportSchema = false)
 @TypeConverters(Converters::class)
 public abstract class ItemRoomDB : RoomDatabase() {
