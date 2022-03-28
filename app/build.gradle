@@ -5,6 +5,7 @@ plugins {
     id 'com.google.gms.google-services'
 
     id 'kotlin-kapt'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -37,6 +38,8 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.8'
+    implementation 'com.google.firebase:firebase-analytics-ktx:20.1.0'
     var nav_version = "2.4.1"
 
     implementation 'androidx.core:core-ktx:1.7.0'
