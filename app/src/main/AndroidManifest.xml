@@ -17,7 +17,8 @@
             android:exported="true" />
         <activity
             android:name=".ui.FormActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".ui.ProfileActivity"/>
         <activity
             android:name=".ui.CartActivity"
             android:exported="true"
