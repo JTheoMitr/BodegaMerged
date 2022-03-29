@@ -6,25 +6,42 @@
     android:layout_height="match_parent"
 
     android:background="@drawable/image_profile_placeholder"
-    tools:context=".ProfileActivity">
+    tools:context=".ui.ProfileActivity">
 
 
 
     <!-- This is a comment -->
+
+    <ImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_headshot_one" />
+
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginStart="100dp"
-        android:textSize="22sp"
-        android:layout_marginTop="137dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="300dp"
+        android:paddingTop="17dp"
         android:background="@color/white"
         android:text="PROFILE"
+        android:textAlignment="center"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
