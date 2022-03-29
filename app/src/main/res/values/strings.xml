@@ -23,4 +23,6 @@
     <string name="placeholder">PLACEHOLDER</string>
     <string name="last_name_label">Last Name:</string>
     <string name="support_ticket">Create a New Support Ticket</string>
+    <string name="how_can_we_help_you">How can we help you?</string>
+    <string name="please_fill_out_all_fields">Please fill out all fields</string>
 </resources>
