@@ -1,12 +1,15 @@
 package android.example.bodegaversionone
 
 import android.app.Activity
+import android.app.SearchManager
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.activity.viewModels
 
@@ -124,11 +127,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     //JOHNS CODE FOR MENU OPTIONS
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val menuInflater = menuInflater
         menuInflater.inflate(R.menu.option, menu)
         return super.onCreateOptionsMenu(menu)
+
+        //BETH'S CODE FOR SEARCH BAR
+        //associate searchable configuration with the SearchView
+        val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        (menu.findItem(R.id.search).actionView as SearchView).apply {
+            setSearchableInfo(searchManager.getSearchableInfo(componentName))
+        }
+        return true
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.SignOut) {
