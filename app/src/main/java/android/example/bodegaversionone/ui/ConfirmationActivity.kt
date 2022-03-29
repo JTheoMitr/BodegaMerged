@@ -11,6 +11,8 @@ class ConfirmationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_confirmation)
 
         val firstName = intent.getStringExtra("firstName")
+        val lastName = intent.getStringExtra("lastName")
         fnameResult.text = firstName
+        lnameResult.text = lastName
     }
 }

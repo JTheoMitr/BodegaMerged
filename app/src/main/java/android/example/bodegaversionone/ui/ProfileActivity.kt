@@ -18,8 +18,8 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         auth = FirebaseAuth.getInstance()
-        val currentUser = auth.currentUser!!.email.toString()
-        welcomeText.text = "Welcome, ${currentUser}"
+        val currentUserEmail = auth.currentUser!!.email.toString()
+        welcomeText.text = currentUserEmail
 
     }
 

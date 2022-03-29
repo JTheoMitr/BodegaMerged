@@ -24,6 +24,7 @@ class FormActivity : AppCompatActivity() {
         val firstName: String = editTextFirstName.text.toString()
         val lastName: String = editTextLastName.text.toString()
         intent.putExtra("firstName", firstName)
+        intent.putExtra("lastName", lastName)
         startActivity(intent)
     }
 }
