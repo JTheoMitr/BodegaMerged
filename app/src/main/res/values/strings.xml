@@ -26,4 +26,5 @@
     <string name="how_can_we_help_you">How can we help you?</string>
     <string name="please_fill_out_all_fields">Please fill out all fields</string>
     <string name="ticket_response">A member of the BODEGA team will reach out you in the next 1-2 business days.</string>
+    <string name="total_completed_orders_placeholder">Total Completed Orders: 11</string>
 </resources>

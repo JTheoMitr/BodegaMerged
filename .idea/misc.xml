@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/drawable/custom_border.xml" value="0.1953125" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/drawable/custom_image_border.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/drawable/custom_image_border_grey.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/drawable/custom_text_border.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/drawable/custom_text_border_grey.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/activity_cart.xml" value="0.1" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/activity_confirmation.xml" value="0.22" />
@@ -13,7 +15,7 @@
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/activity_form_profile.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/activity_profile.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/activity_profile.xml" value="0.22" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/layout/row_items.xml" value="0.25" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/menu/option.xml" value="0.16041666666666668" />
         <entry key="..\:/Users/955362/AndroidStudioProjects/BodegaRoomSSO2/app/src/main/res/menu/option_profile.xml" value="0.17239583333333333" />
