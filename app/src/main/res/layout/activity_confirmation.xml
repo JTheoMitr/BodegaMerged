@@ -99,4 +99,42 @@
         app:layout_constraintStart_toEndOf="@+id/lnameLabel"
         app:layout_constraintTop_toBottomOf="@+id/fnameResult" />
 
+    <TextView
+        android:id="@+id/ticketText"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="@string/placeholder"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/custom_border"
+        app:layout_constraintTop_toBottomOf="@id/lnameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/ticketResponse"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_border"
+        android:text="@string/ticket_response"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ticketText" />
+
+    <Button
+        android:id="@+id/btnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to Account"
+        app:layout_constraintTop_toBottomOf="@id/ticketResponse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

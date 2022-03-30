@@ -2,6 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/SignOut" android:title="Sign Out"></item>
-    <item android:id="@+id/EditProfile" android:title="Edit Profile"></item>
+    <item android:id="@+id/EditProfile" android:title="Support"></item>
 
 </menu>

@@ -23,8 +23,10 @@ class FormActivity : AppCompatActivity() {
         val intent = Intent(this, ConfirmationActivity::class.java)
         val firstName: String = editTextFirstName.text.toString()
         val lastName: String = editTextLastName.text.toString()
+        val ticketBody: String = ticketBody.text.toString()
         intent.putExtra("firstName", firstName)
         intent.putExtra("lastName", lastName)
+        intent.putExtra("ticketBody", ticketBody)
         startActivity(intent)
     }
 }
