@@ -20,9 +20,7 @@ class ConfirmationActivity : AppCompatActivity() {
         val firstName = intent.getStringExtra("firstName")
         val lastName = intent.getStringExtra("lastName")
         val ticketBody = intent.getStringExtra("ticketBody")
-        fnameResult.text = firstName
-        lnameResult.text = lastName
-        ticketText.text = ticketBody
+        ticketText.text = lastName + ", " + firstName + ": "  + ticketBody
 
         val ticket = hashMapOf(
             "first" to firstName,
