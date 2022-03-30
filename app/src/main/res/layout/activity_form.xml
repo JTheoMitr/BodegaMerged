@@ -8,63 +8,91 @@
     tools:context=".ui.FormActivity">
 
     <TextView
+        android:id="@+id/ticketHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="105dp"
         android:text="@string/support_ticket"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/editTextFirstName"
+        app:layout_constraintBottom_toTopOf="@id/ticketCaption"
         android:gravity="center" />
+
+    <TextView
+        android:id="@+id/ticketCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ticketHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editTextFirstName"
+        android:layout_marginTop="15dp"
+        android:text="@string/please_fill_out_all_fields"
+        android:textStyle="bold"
+        android:textSize="18dp" />
 
     <EditText
         android:id="@+id/editTextFirstName"
+        android:background="@drawable/custom_border"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="75dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="350dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/first_name"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editTextLastName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ticketCaption"
          />
 
     <EditText
         android:id="@+id/editTextLastName"
+        android:background="@drawable/custom_border"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="35dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/last_name"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ticketBody"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFirstName"
          />
+
+    <EditText
+        android:id="@+id/ticketBody"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/how_can_we_help_you"
+        android:background="@drawable/custom_border"
+        app:layout_constraintTop_toBottomOf="@id/editTextLastName"
+        app:layout_constraintBottom_toTopOf="@id/btnFormSubmit"
+        android:gravity="center"
+        android:layout_marginTop="25dp" />
 
     <Button
         android:id="@+id/btnFormSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="35dp"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/ticketBody" />
 </androidx.constraintlayout.widget.ConstraintLayout>

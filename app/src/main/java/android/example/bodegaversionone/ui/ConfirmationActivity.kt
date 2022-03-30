@@ -1,5 +1,6 @@
 package android.example.bodegaversionone.ui
 
+import android.content.Intent
 import android.example.bodegaversionone.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,22 +19,31 @@ class ConfirmationActivity : AppCompatActivity() {
 
         val firstName = intent.getStringExtra("firstName")
         val lastName = intent.getStringExtra("lastName")
+        val ticketBody = intent.getStringExtra("ticketBody")
         fnameResult.text = firstName
         lnameResult.text = lastName
+        ticketText.text = ticketBody
 
-        val user = hashMapOf(
+        val ticket = hashMapOf(
             "first" to firstName,
-            "last" to lastName
+            "last" to lastName,
+            "ticket" to ticketBody
         )
 
         // Add a new document with a generated ID
-        db.collection("users")
-            .add(user)
+        db.collection("tickets")
+            .add(ticket)
             .addOnSuccessListener { documentReference ->
                 Log.d("db", "DocumentSnapshot added with ID: ${documentReference.id}")
             }
             .addOnFailureListener { e ->
                 Log.w("db", "Error adding document", e)
             }
+
+        btnAccount.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 }
