@@ -4,8 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image_teal_sky_bgnd"
+    android:background="@color/light_grey"
     tools:context=".ui.ConfirmationActivity">
+
+    <TextView
+        android:id="@+id/ticketConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TICKET CONFIRMED"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/checkboxImage"
@@ -18,6 +30,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/resultsSaved"
         app:srcCompat="@drawable/ic_baseline_check_circle_outline" />
+
+
+
 
     <TextView
         android:id="@+id/resultsSaved"
@@ -34,7 +49,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/checkboxImage"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/ticketConfirmed" />
+
 
     <TextView
         android:id="@+id/fnameLabel"
@@ -103,14 +119,14 @@
         android:id="@+id/ticketText"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:text="@string/placeholder"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="280dp"
-        android:background="@drawable/custom_border"
-        app:layout_constraintTop_toBottomOf="@id/lnameLabel"
+        android:text="@string/placeholder"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/lnameLabel" />
 
     <TextView
         android:id="@+id/ticketResponse"
