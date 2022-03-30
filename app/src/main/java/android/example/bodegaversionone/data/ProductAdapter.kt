@@ -40,9 +40,9 @@ class ProductAdapter(context : Context, val productList : List<Product>) : Recyc
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
+        
         holder.title.text = productList[position].title.take(20)
         holder.description.text = productList[position].description
-
         val url = productList[position].image
 
         Glide.with(holder.image)

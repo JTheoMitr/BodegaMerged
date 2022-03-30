@@ -5,12 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/image_profile_placeholder"
+    android:background="@drawable/image_grey_arrows_bgnd"
     tools:context=".ui.ProfileActivity">
 
 
-
-    <!-- This is a comment -->
 
     <ImageView
         android:id="@+id/imageAvatar"
@@ -22,25 +20,98 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_headshot_one" />
+        app:srcCompat="@drawable/image_cartoon_avatar_1" />
 
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="300dp"
         android:paddingTop="17dp"
-        android:background="@color/white"
-        android:text="PROFILE"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:text="@string/placeholder"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/basketImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_image_border_grey"
+        app:layout_constraintEnd_toStartOf="@+id/ordersCompleted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:srcCompat="@drawable/ic_baseline_shopping_basket" />
+
+
+    <TextView
+        android:id="@+id/ordersCompleted"
+        android:textColor="@color/white"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="55dp"
+        android:paddingTop="15dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/custom_text_border_grey"
+        android:text="@string/total_completed_orders_placeholder"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/basketImage"
+        app:layout_constraintTop_toTopOf="@id/basketImage" />
+
+    <ImageView
+        android:id="@+id/supportImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_image_border_grey"
+        app:layout_constraintEnd_toStartOf="@+id/supportProgress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ordersCompleted"
+        app:srcCompat="@drawable/ic_baseline_support_agent" />
+
+
+    <TextView
+        android:id="@+id/supportProgress"
+        android:textColor="@color/white"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="55dp"
+        android:paddingTop="15dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/custom_text_border_grey"
+        android:text="@string/tickets_in_progress_placeholder"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/supportImage"
+        app:layout_constraintTop_toTopOf="@id/supportImage" />
+
+    <Button
+        android:id="@+id/btnPasswordReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_password"
+        app:layout_constraintTop_toBottomOf="@id/supportProgress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="75dp" />
 
 
 

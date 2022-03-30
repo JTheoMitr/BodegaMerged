@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image_teal_sky_bgnd"
+    android:background="@drawable/image_fractal_grey"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,11 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
+        android:textColor="@color/white"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="10dp"
         android:text="@string/all_products"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerview_products"
         app:layout_constraintEnd_toEndOf="parent"
