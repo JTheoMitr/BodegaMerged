@@ -14,7 +14,7 @@
         android:text="@string/ticket_confirmed"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="25dp"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -23,10 +23,10 @@
         android:id="@+id/ticketNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="#637784900ES8"
+        android:text="@string/ticket_number_placeholder"
         app:layout_constraintTop_toTopOf="@id/ticketConfirmed"
-        android:layout_marginTop="35dp"
-        android:textSize="15sp"
+        android:layout_marginTop="65dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -34,14 +34,14 @@
     <ImageView
         android:id="@+id/checkboxImage"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/custom_image_border"
         app:layout_constraintEnd_toStartOf="@+id/resultsSaved"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/resultsSaved"
-        app:srcCompat="@drawable/ic_baseline_check_circle_outline" />
+        app:srcCompat="@drawable/ic_baseline_support_agent_black" />
 
 
 
@@ -49,83 +49,82 @@
     <TextView
         android:id="@+id/resultsSaved"
         android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="35dp"
         android:background="@drawable/custom_text_border"
-        android:text="@string/confirm_message"
+        android:text="@string/ticket_response"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@id/fnameLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/checkboxImage"
         app:layout_constraintTop_toBottomOf="@id/ticketConfirmed" />
 
 
-    <TextView
-        android:id="@+id/fnameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="180dp"
-        android:text="@string/first_name_label"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultsSaved" />
+<!--    <TextView-->
+<!--        android:id="@+id/fnameLabel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="65dp"-->
+<!--        android:layout_marginEnd="180dp"-->
+<!--        android:text="@string/first_name_label"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/resultsSaved" />-->
 
-    <TextView
-        android:id="@+id/fnameResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="160dp"
-        android:text="@string/placeholder"
-        android:textSize="16sp"
-        app:layout_constraintHorizontal_bias="0.245"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fnameLabel"
-        app:layout_constraintTop_toTopOf="@+id/fnameLabel" />
+<!--    <TextView-->
+<!--        android:id="@+id/fnameResult"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginEnd="160dp"-->
+<!--        android:text="@string/placeholder"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintHorizontal_bias="0.245"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/fnameLabel"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/fnameLabel" />-->
 
-    <TextView
-        android:id="@+id/lnameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="430dp"
-        android:text="@string/last_name_label"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fnameLabel" />
+<!--    <TextView-->
+<!--        android:id="@+id/lnameLabel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="180dp"-->
+<!--        android:layout_marginBottom="430dp"-->
+<!--        android:text="@string/last_name_label"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/fnameLabel" />-->
 
-    <TextView
-        android:id="@+id/lnameResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="430dp"
-        android:text="@string/placeholder"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
-        app:layout_constraintStart_toEndOf="@+id/lnameLabel"
-        app:layout_constraintTop_toBottomOf="@+id/fnameResult" />
+<!--    <TextView-->
+<!--        android:id="@+id/lnameResult"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="160dp"-->
+<!--        android:layout_marginBottom="430dp"-->
+<!--        android:text="@string/placeholder"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.245"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/lnameLabel"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/fnameResult" />-->
 
     <TextView
         android:id="@+id/ticketText"
         android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="25dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="135dp"
         android:layout_marginBottom="280dp"
         android:text="@string/placeholder"
         android:textAlignment="center"
@@ -133,28 +132,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lnameLabel" />
+        app:layout_constraintTop_toBottomOf="@id/resultsSaved" />
 
-    <TextView
-        android:id="@+id/ticketResponse"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:background="@drawable/custom_border_two"
-        android:text="@string/ticket_response"
-        android:textAlignment="center"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="95dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ticketText" />
 
     <Button
         android:id="@+id/btnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Return to Account"
-        app:layout_constraintTop_toBottomOf="@id/ticketResponse"
+        app:layout_constraintTop_toBottomOf="@id/ticketText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

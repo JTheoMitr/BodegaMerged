@@ -30,4 +30,7 @@
     <string name="tickets_in_progress_placeholder">Tickets in Progress: 2</string>
     <string name="reset_password">Reset Password</string>
     <string name="ticket_confirmed">TICKET CONFIRMED</string>
+    <string name="ticket_number_placeholder">#637784900ES8</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="description">Description</string>
 </resources>
