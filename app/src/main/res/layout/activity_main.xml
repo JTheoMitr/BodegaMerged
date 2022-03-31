@@ -19,6 +19,7 @@
         android:text="@string/all_products"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
         app:layout_constraintBottom_toTopOf="@+id/recyclerview_products"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,10 +39,11 @@
         android:id="@+id/fab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/ic_baseline_shopping_cart"
-        app:maxImageSize="56dp"
+        app:srcCompat="@drawable/ic_baseline_shopping_cart"
+        app:maxImageSize="35dp"
         android:layout_width="wrap_content"
+        android:background="@color/black"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:contentDescription="@string/add_item" />
+        android:contentDescription="@string/shopping_cart" />
 </androidx.constraintlayout.widget.ConstraintLayout>
