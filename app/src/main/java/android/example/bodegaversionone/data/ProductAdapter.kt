@@ -14,6 +14,7 @@ import android.widget.ImageView
 import android.widget.ListAdapter
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.graphics.drawable.toBitmap
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.row_items.view.*
@@ -36,9 +37,11 @@ class ProductAdapter(context : Context, val productList : List<Product>) : Recyc
 
             title.setOnClickListener {
                 val intent = Intent(productView.context, ProductActivity::class.java)
-                val bund = Bundle()
-                startActivity(productView.context, intent, bund)
-                Log.d(TAG, "Clicked!")
+                intent.putExtra("title", title.text.toString())
+                intent.putExtra("description", description.text.toString())
+                intent.putExtra("image", image.drawable.toBitmap())
+                productView.context.startActivity(intent)
+
             }
 
         }
@@ -69,7 +72,6 @@ class ProductAdapter(context : Context, val productList : List<Product>) : Recyc
             .load(url)
             .into(holder.image)
     }
-
 
     override fun getItemCount(): Int {
         return productList.size
