@@ -70,7 +70,6 @@ class ProductAdapter(context : Context, val productList : List<Product>) : Recyc
             .into(holder.image)
     }
 
-
     override fun getItemCount(): Int {
         return productList.size
     }
