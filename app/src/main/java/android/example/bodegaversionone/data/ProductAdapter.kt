@@ -2,7 +2,6 @@ package android.example.bodegaversionone.data
 
 import android.content.Context
 import android.content.Intent
-import android.example.bodegaversionone.MainActivity
 import android.example.bodegaversionone.R
 import android.example.bodegaversionone.models.Product
 import android.example.bodegaversionone.ui.ProductActivity
@@ -14,26 +13,21 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ListAdapter
 import android.widget.TextView
-import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.row_items.view.*
-import kotlin.coroutines.coroutineContext
-import android.widget.Toast.makeText as makeText1
 
 class ProductAdapter(context : Context, val productList : List<Product>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     class ProductViewHolder(productView : View) : RecyclerView.ViewHolder(productView), View.OnClickListener {
 
-        private val TAG = javaClass.simpleName
+        private var TAG = javaClass.simpleName
+
 
         var title: TextView
         var description: TextView
         var image: ImageView
-
-
 
         init {
             title = productView.title
@@ -44,11 +38,10 @@ class ProductAdapter(context : Context, val productList : List<Product>) : Recyc
                 val intent = Intent(productView.context, ProductActivity::class.java)
                 val bund = Bundle()
                 startActivity(productView.context, intent, bund)
-
+                Log.d(TAG, "Clicked!")
             }
+
         }
-
-
 
         companion object {
             fun create(parent : ViewGroup) : ProductViewHolder {
@@ -75,8 +68,6 @@ class ProductAdapter(context : Context, val productList : List<Product>) : Recyc
         Glide.with(holder.image)
             .load(url)
             .into(holder.image)
-
-
     }
 
 
