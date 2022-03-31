@@ -33,4 +33,6 @@
     <string name="ticket_number_placeholder">#637784900ES8</string>
     <string name="shopping_cart">Shopping Cart</string>
     <string name="description">Description</string>
+    <string name="textview">TextView</string>
+    <string name="sample_block">This is a large block of sample text</string>
 </resources>
