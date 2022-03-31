@@ -13,12 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodegaVersionOne">
         <activity
+            android:name=".ui.ProductActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.ConfirmationActivity"
             android:exported="true" />
         <activity
             android:name=".ui.FormActivity"
             android:exported="true"
-            android:parentActivityName=".ui.ProfileActivity"/>
+            android:parentActivityName=".ui.ProfileActivity" />
         <activity
             android:name=".ui.CartActivity"
             android:exported="true"
