@@ -43,6 +43,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var myAdapter: ProductAdapter
     lateinit var linearLayoutManager: LinearLayoutManager
 
+    // please ignore this awful practice
+    private var cartTitles = mutableListOf<String>()
+    lateinit var cartPrices : List<String>
+
     private val newItemActivityRequestCode = 1
 
     // DEREK's CODE
@@ -169,7 +173,16 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    // functions for adding strings and getting the list
+    public fun setTitles(titles : MutableList<String>) {
+        cartTitles = titles
+    }
 
+    public fun getTitles(): MutableList<String> {
+        return cartTitles
+    }
 
-
+    public fun addTitle(title : String) {
+        cartTitles.add(title)
+    }
 }
