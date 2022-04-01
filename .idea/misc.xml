@@ -28,7 +28,9 @@
         <entry key="..\:/Users/955432/AndroidStudioProjects/GroupProject/BodegaVersionOne/app/src/main/res/layout/activity_new_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_cart.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_product.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_thank_you.xml" value="0.1" />
         <entry key="app/src/main/res/layout/row_items.xml" value="0.1" />
       </map>
     </option>
