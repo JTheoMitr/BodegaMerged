@@ -1,6 +1,8 @@
 package android.example.bodegaversionone.ui
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.example.bodegaversionone.R
 import android.example.bodegaversionone.utils.Preferences
 import androidx.appcompat.app.AppCompatActivity
@@ -18,14 +20,15 @@ class CartActivity : AppCompatActivity() {
 
         val cartList = findViewById<LinearLayout>(R.id.cartLayout)
 
-        var prefs : Preferences = Preferences(this)
-        prefs.getList()?.forEach {
+        val cart : String = "CART_PREFS"
+        val preferences : SharedPreferences = this.getSharedPreferences(cart, Context.MODE_PRIVATE)
+
+        preferences.all.forEach {
             var tv = TextView(this)
             tv.textSize = 20f
-            tv.text = it
+            tv.text = it.toString()
             cartList.addView(tv)
         }
-
 
     }
 

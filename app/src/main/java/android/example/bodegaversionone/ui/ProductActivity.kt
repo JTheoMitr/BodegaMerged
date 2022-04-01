@@ -46,9 +46,8 @@ class ProductActivity : AppCompatActivity() {
 
     fun addToCart(view: View) {
         val prefs = Preferences(this)
-        val currentList = prefs.getList()
-        currentList?.add(intent.getStringExtra("title").toString())
-        prefs.setList(currentList)
+        var item = intent.getStringExtra("title").toString()
+        prefs.editor.putString(intent.getStringExtra("title").toString(),item).apply()
 
         val cartIntent = Intent(this, CartActivity::class.java)
         cartIntent.putExtra("title", intent.getStringExtra("title").toString())
