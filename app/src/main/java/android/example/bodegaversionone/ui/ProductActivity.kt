@@ -1,9 +1,9 @@
 package android.example.bodegaversionone.ui
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.example.bodegaversionone.MainActivity
 import android.example.bodegaversionone.R
-import android.example.bodegaversionone.models.Product
 import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +13,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.graphics.drawable.toDrawable
+import android.example.bodegaversionone.utils.Preferences
+
 
 class ProductActivity : AppCompatActivity() {
 
@@ -22,7 +24,6 @@ class ProductActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val TAG = javaClass.simpleName
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product)
@@ -44,6 +45,11 @@ class ProductActivity : AppCompatActivity() {
     }
 
     fun addToCart(view: View) {
+        val prefs = Preferences(this)
+        val currentList = prefs.getList()
+        currentList?.add(intent.getStringExtra("title").toString())
+        prefs.setList(currentList)
+
         val cartIntent = Intent(this, CartActivity::class.java)
         cartIntent.putExtra("title", intent.getStringExtra("title").toString())
         startActivity(cartIntent)

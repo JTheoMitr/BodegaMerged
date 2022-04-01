@@ -2,6 +2,7 @@ package android.example.bodegaversionone.ui
 
 import android.content.Intent
 import android.example.bodegaversionone.R
+import android.example.bodegaversionone.utils.Preferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,20 +15,18 @@ class CartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart)
 
-        var title : String
 
         val cartList = findViewById<LinearLayout>(R.id.cartLayout)
 
-        if (intent.extras != null) {
-            // I'm sorry for this bad programming
-            title = intent.getStringExtra("title").toString()
-            if(title != null) {
-                var tv = TextView(this)
-                tv.textSize = 20f
-                tv.text = title
-                cartList.addView(tv)
-            }
+        var prefs : Preferences = Preferences(this)
+        prefs.getList()?.forEach {
+            var tv = TextView(this)
+            tv.textSize = 20f
+            tv.text = it
+            cartList.addView(tv)
         }
+
+
     }
 
     fun checkout(view: View) {
