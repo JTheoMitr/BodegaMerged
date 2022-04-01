@@ -5,16 +5,15 @@ import android.example.bodegaversionone.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 
-class CheckoutActivity : AppCompatActivity() {
+class PaymentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_checkout)
+        setContentView(R.layout.activity_payment)
     }
 
-    fun payment(view: View) {
-        val paymentIntent = Intent(this, PaymentActivity::class.java)
-        startActivity(paymentIntent)
+    fun thankYou(view: View) {
+        val thanksIntent = Intent(this, ThankYouActivity::class.java)
+        startActivity(thanksIntent)
     }
 }
