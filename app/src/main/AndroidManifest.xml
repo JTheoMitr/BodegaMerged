@@ -12,6 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BodegaVersionOne">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value=
+            "AIzaSyDfJYsvnjGawBkwEIp8v172xYf866jNYs8" />
         <activity
             android:name=".ui.ThankYouActivity"
             android:exported="true" />
