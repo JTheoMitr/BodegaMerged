@@ -13,8 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.firestore.GeoPoint
-import com.google.maps.GeoApiContext
-import com.google.maps.GeocodingApi
+
 import kotlinx.android.synthetic.main.activity_payment.*
 import java.io.IOException
 

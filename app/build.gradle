@@ -95,6 +95,10 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
 
-    //Maps API
-    api 'com.google.maps:google-maps-services:0.10.2'
+
+
+    //Jetpack Compose Testing Dependencies
+    def compose_version = '1.0.1'
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:$compose_version")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:$compose_version")
 }
