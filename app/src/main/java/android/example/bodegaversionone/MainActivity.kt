@@ -14,6 +14,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
@@ -54,7 +55,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // for firebase authorization
+
+        // John's code for firebase authorization
         aut = FirebaseAuth.getInstance()
 
         // Just added to get recycler view working for Room with a View
@@ -69,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         recyclerview_products.layoutManager = linearLayoutManager
 
         getMyData()
+
 
         // observer for data changes with LiveData
         itemViewModel.allItems.observe(this, Observer {
@@ -119,6 +122,9 @@ class MainActivity : AppCompatActivity() {
 
     // John's Code for RETROFIT
     private fun getMyData() {
+
+        progressBar.visibility = View.VISIBLE
+
         val retrofitBuilder = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(BASE_URL)
@@ -137,6 +143,7 @@ class MainActivity : AppCompatActivity() {
                 myAdapter = ProductAdapter(baseContext, responseBody)
                 myAdapter.notifyDataSetChanged()
                 recyclerview_products.adapter = myAdapter
+                progressBar.visibility = View.GONE
 
 
             }

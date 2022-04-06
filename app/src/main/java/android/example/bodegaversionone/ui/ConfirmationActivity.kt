@@ -26,6 +26,8 @@ class ConfirmationActivity : AppCompatActivity() {
             "first" to firstName,
             "last" to lastName,
             "ticket" to ticketBody
+            //"status" to "pending"
+            //"orderNumber" to Math.random().toString()
         )
 
         // Add a new document with a generated ID

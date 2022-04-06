@@ -43,4 +43,21 @@ class ProfileActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
+
+    // John's Code for PASSWORD RESET
+
+//    val email = "example@gmail.com"
+//    val password = "demoPassword"
+//    FirebaseAuth.getInstance().setLanguageCode("en") // Set to English
+//    FirebaseAuth.getInstance()
+//    .sendPasswordResetEmail(email)
+//    .addOnCompleteListener(this, { task: Task<AuthResult> ->
+//        // Receive response from Firebase Console
+//    })
+//    .addOnSuccessListener(this, { authResult: AuthResult? ->
+//        // Reset password email has been successfully sent to the email
+//    })
+//    .addOnFailureListener(this, { exception: Exception ->
+//        // Reset password request is failed with an exception
+//    })
 }
